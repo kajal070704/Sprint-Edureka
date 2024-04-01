@@ -1,0 +1,882 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 1, 2024 04:25:39 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@SanityTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search in HomePage</p>
+            <p class="text-sm">
+              <span>4:25:40 pm</span> / <span>00:10:48:568</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Search in HomePage</h5>
+<span class='badge badge-success'>04.01.2024 4:25:40 pm</span>
+<span class='badge badge-danger'>04.01.2024 4:36:29 pm</span>
+<span class='badge badge-default'>00:10:48:568</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Download Curriculum</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_am_on_edureka_homepage()">
+                <span>Given I am on edureka homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_scrolling_down()">
+                <span>When I scrolling down</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_click_on_become_a_devops_engineer()">
+                <span>When I click on BECOME A DEVOPS ENGINEER</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_scroll_down()">
+                <span>When I scroll down</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_click_download_curriculum()">
+                <span>And I click DOWNLOAD CURRICULUM</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefination.StepDefinationHomePage.i_enter_email_as(java.lang.String)">
+                <span>And I enter email as "chintalatanusha@gmail.com"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88e3f45ac66c9830c853b889751916d8, sendKeysToElement {value=[Ljava.lang.CharSequence;@7144655b, id=f.88DF6F2A06D8C35F1D0EBA4FC1F98679.d.E1BACCC45111D1E93778FB765655933C.e.400}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57034}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57034/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88e3f45ac66c9830c853b889751916d8)] -> xpath: //*[@id="cd_form"]/div[1]/input]
+Session ID: 88e3f45ac66c9830c853b889751916d8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at HomePageFactory.Curriculum.writeEmail(Curriculum.java:77)
+	at StepDefination.StepDefinationHomePage.i_enter_email_as(StepDefinationHomePage.java:85)
+	at ✽.I enter email as "chintalatanusha@gmail.com"(file:///C:/Users/KAJAAGRA/Desktop/java/Edureka-Sprint/Features/HomePage.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_enter_phno_as(java.lang.String)">
+                <span>And I enter phno as "9391548398"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_start_download()">
+                <span>And I click Start Download</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_skip()">
+                <span>And I click skip</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.download_completed()">
+                <span>Then Download Completed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Download Unsuccessful</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefination.StepDefinationHomePage.i_am_on_edureka_homepage()">
+                <span>Given I am on edureka homepage</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e289b804fdcde6cd66efe603cbdc867, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57271/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e289b804fdcde6cd66efe603cbdc867
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1035)
+	at StepDefination.StepDefinationHomePage.i_am_on_edureka_homepage(StepDefinationHomePage.java:30)
+	at ✽.I am on edureka homepage(file:///C:/Users/KAJAAGRA/Desktop/java/Edureka-Sprint/Features/HomePage.feature:17)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_scrolling_down()">
+                <span>When I scrolling down</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_on_become_a_devops_engineer()">
+                <span>When I click on BECOME A DEVOPS ENGINEER</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_scroll_down()">
+                <span>When I scroll down</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_download_curriculum()">
+                <span>And I click DOWNLOAD CURRICULUM</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_enter_email_as(java.lang.String)">
+                <span>And I enter email as "chintalatanusha@gmail.com"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_enter_phno_as(java.lang.String)">
+                <span>And I enter phno as "93915483"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_start_download()">
+                <span>And I click Start Download</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.download_is_not_completed()">
+                <span>Then Download is not completed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>play course preview</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_am_on_edureka_homepage()">
+                <span>Given I am on edureka homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_am_scroll_down1()">
+                <span>When I am scrollDown1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_click_become_a_data_scientist()">
+                <span>And I click BECOME A DATA SCIENTIST</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_click_the_play_button()">
+                <span>And I click the play button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_enter_the_email_as(java.lang.String)">
+                <span>And I enter the email as "chintalatanusha@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_enter_the_phone_number_as(java.lang.String)">
+                <span>And I Enter the phone number as "9391548398"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_click_on_unlock_video()">
+                <span>And I click on unlock video</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_am_able_to_play_the_video()">
+                <span>Then I am able to play the video</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log fail-bg mr-2">Fail</span>Enrolling a Course</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_am_on_edureka_homepage()">
+                <span>Given I am on edureka homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_scroll_down_to_trending_couse()">
+                <span>When I scroll down to trending couse</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefination.StepDefinationHomePage.i_click_selenium_certification_training_course()">
+                <span>And I click SELENIUM CERTIFICATION TRAINING COURSE</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="homecardmain ga_trending_course_card" href="https://www.edureka.co/selenium-certification-training?utm_source=hometrending&amp;utm_campaign=trendingcourses" data-id="1964" data-category="Software Testing" data-item-variant="live" data-name="Selenium Certification Training Course" tabindex="0">...</a> is not clickable at point (486, 438). Other element would receive the click: <iframe scrolling="no" id="wiz-iframe-intent" style="z-index: 2147483647; display:block; height: 100% !important; width: 100% !important;min-height:80px !important;border:0px !important; border-color:none !important;"></iframe>
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62690c99283b87c2b7618ff5517ebca0, clickElement {id=f.01EA73113B52C9C9F09293C5E1C6FA74.d.AEDBB37B757C13CC1A210207ACA9CE24.e.203}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57621/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (62690c99283b87c2b7618ff5517ebca0)] -> xpath: //a[@class='homecardmain ga_trending_course_card' and @data-name='Selenium Certification Training Course']]
+Session ID: 62690c99283b87c2b7618ff5517ebca0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at HomePageFactory.Enrolling.Selenium(Enrolling.java:46)
+	at StepDefination.StepDefinationHomePage.i_click_selenium_certification_training_course(StepDefinationHomePage.java:223)
+	at ✽.I click SELENIUM CERTIFICATION TRAINING COURSE(file:///C:/Users/KAJAAGRA/Desktop/java/Edureka-Sprint/Features/HomePage.feature:40)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_enroll()">
+                <span>And I click Enroll</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_enter_in_enrolling_email_as(java.lang.String)">
+                <span>And I enter in enrolling email as "chintalatanusha@gmail.com"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_enter_in_enrolling_phno_as(java.lang.String)">
+                <span>And I enter in enrolling phno as "9391548398"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_enroll_now()">
+                <span>And I click Enroll Now</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.enrolling_sucessful()">
+                <span>Then Enrolling Sucessful</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log fail-bg mr-2">Fail</span>Reading Reviews</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_am_on_edureka_homepage()">
+                <span>Given I am on edureka homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefination.StepDefinationHomePage.i_scroll_down_to_reviews()">
+                <span>When I scroll down to reviews</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefination.StepDefinationHomePage.i_click_view_all_reviews()">
+                <span>And I click VIEW ALL REVIEWS</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e28723ade304582f3ef1f97172a6ae8, clickElement {id=f.ACB54DDB0B1765CC67F3983660D811ED.d.849466B84FAB93F0C9EAE79014AECA68.e.193}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57955/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6e28723ade304582f3ef1f97172a6ae8)] -> xpath: //a[@class='view_all_reviews']]
+Session ID: 6e28723ade304582f3ef1f97172a6ae8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at HomePageFactory.Reviews.view(Reviews.java:39)
+	at StepDefination.StepDefinationHomePage.i_click_view_all_reviews(StepDefinationHomePage.java:278)
+	at ✽.I click VIEW ALL REVIEWS(file:///C:/Users/KAJAAGRA/Desktop/java/Edureka-Sprint/Features/HomePage.feature:50)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.i_click_read_more()">
+                <span>Then I click Read More</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefination.StepDefinationHomePage.reading_sucessful()">
+                <span>Then reading sucessful</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.WebDriverException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:36:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>And I click VIEW ALL REVIEWS</a>
+<div class="">
+<span class="badge badge-default">Search in HomePage.Reading Reviews.And I click VIEW ALL REVIEWS</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:29:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Given I am on edureka homepage</a>
+<div class="">
+<span class="badge badge-default">Search in HomePage.Download Unsuccessful.Given I am on edureka homepage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:27:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>And I enter email as "chintalatanusha@gmail.com"</a>
+<div class="">
+<span class="badge badge-default">Search in HomePage.Download Curriculum.And I enter email as "chintalatanusha@gmail.com"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:34:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>And I click SELENIUM CERTIFICATION TRAINING COURSE</a>
+<div class="">
+<span class="badge badge-default">Search in HomePage.Enrolling a Course.And I click SELENIUM CERTIFICATION TRAINING COURSE</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@SanityTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SanityTest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:27:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Download Unsuccessful</a>
+<div class="">
+<span class="badge badge-default">Search in HomePage.Download Unsuccessful</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 1, 2024 04:25:39 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 1, 2024 05:08:49 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='20%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='80%'><b>4</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='42%'><b>17</b> steps passed</small></div>
+<div>
+<small data-tooltip='10%'><b>4</b> steps failed,
+<b>19</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Search in HomePage":648.568
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@SanityTest</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 4,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 17,
+failGrandChild: 4,
+warningGrandChild: 0,
+skipGrandChild: 19,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

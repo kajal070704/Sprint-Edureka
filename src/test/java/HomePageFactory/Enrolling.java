@@ -23,7 +23,7 @@ public class Enrolling {
     @FindBy(xpath="//button[@class='videoinfo_btn_enr_stle__G_pv9 btn btn-primary']")
     WebElement enroll;
     
-    @FindBy(xpath="//input[@class='enrollbatchpopup_input__Z_x3w form-control']")
+    @FindBy(xpath="//*[@id=\"firstENForm\"]/div[1]/input")
     WebElement EmailId;
     
     @FindBy(xpath="//input[@class='enrollbatchpopup_input__Z_x3w enrollbatchpopup_phone_input__2vddm form-control']")

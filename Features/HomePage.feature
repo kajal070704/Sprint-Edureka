@@ -1,6 +1,5 @@
 Feature: Search in HomePage
 
-
 Scenario: Download Curriculum
 Given I am on edureka homepage
 When I scrolling down
@@ -13,7 +12,7 @@ And I click Start Download
 And I click skip
 Then Download Completed
 
-
+@SanityTest
 Scenario: Download Unsuccessful
 Given I am on edureka homepage
 When I scrolling down
@@ -24,7 +23,7 @@ And I enter email as "chintalatanusha@gmail.com"
 And I enter phno as "93915483"
 And I click Start Download
 Then Download is not completed
-@SanityTest
+
 Scenario: play course preview
 Given I am on edureka homepage
 When I am scrollDown1
@@ -34,7 +33,7 @@ And I enter the email as "chintalatanusha@gmail.com"
 And I Enter the phone number as "9391548398"
 And I click on unlock video
 Then I am able to play the video
-@SanityTest
+
 Scenario: Enrolling a Course
 Given I am on edureka homepage
 When I scroll down to trending couse
@@ -44,7 +43,7 @@ And I enter in enrolling email as "chintalatanusha@gmail.com"
 And I enter in enrolling phno as "9391548398"
 And I click Enroll Now
 Then Enrolling Sucessful
-@SanityTest
+
 Scenario: Reading Reviews
 Given I am on edureka homepage
 When I scroll down to reviews

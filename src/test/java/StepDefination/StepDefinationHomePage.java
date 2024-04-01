@@ -1,6 +1,7 @@
 package StepDefination;
 
 
+//import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -51,7 +52,7 @@ public class StepDefinationHomePage {
 	}
 
 	@When("I scroll down")
-	public void i_scroll_down() {
+	public void i_scroll_down() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
 		Curriculum dw=new Curriculum(driver);
@@ -73,6 +74,7 @@ public class StepDefinationHomePage {
 //	    throw new io.cucumber.java.PendingException();
 		Curriculum sc=new Curriculum(driver);
 		sc.down_curriculum();
+//		driver.findElement(By.xpath("//*[@id='Enroll_move']/div/div[1]/button")).click();
 	}
 	
 	@When("I enter email as {string}")

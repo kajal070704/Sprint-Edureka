@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="Features",
 		glue="StepDefination",
-		tags="@SanityTest"
+		plugin="com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+//				plugin={"html:target/cucumber.html"}
 		)
 
 public class FileRunner {
